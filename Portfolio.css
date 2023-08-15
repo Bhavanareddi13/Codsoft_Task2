@@ -1,70 +1,90 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MyPortfolio</title>
-  <link rel="Stylesheet" href="myportfolio.css" />
-</head>
-<body>
-  <header>
-    <nav>
-      <div class="left">
-        Bhavana's Portfolio</div>
-      <div class="right">
-        <ul>
-          <li><a href="#Home">Home</a></li>
-          <li><a href="#About">About</a></li>
-          <li><a href="#project">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-  <br><br>
-  <section id="Home">
-    <div class="leftdiv">
-        <p id="he"><b>Hello!</b></p>
-        <p style="font-size: 19px;">I am a young webdeveloper.
-        I can build both static and dynamic webpages.Customised webpages also can be done</p> 
-    </div>
-    <div class="rightdiv">
-        <img src="bhavana1.png">
-    </div>
-  </section>
-  <h1>About Me</h1>
-  <section id="About">
-    <table>
-      <tr>
-        <th>School</th>
-        <td> Sri Balaji School Of Excellence</td>
-      </tr>
-      <tr>
-        <th>Intermediate</th>
-        <td> Narayana Jr College</td>
-      </tr>
-      <tr>
-        <th>Engginering</th>
-        <td> Rajeev Gandhi Memorial College of Engginering and Technology</td>
-      </tr>
-    </table>
-    <h3></h3>
-  </section> 
-  <h1>Projects</h1>
-  <section id="project">
-    <centre><h3><b>candidate Management</b><br /><br /></h3></centre>
-    <p>This project uses DataBase and Java.Here we create userprofiles with username and password.</p>
-  </section>
-  <h1>Contact</h1>
-  <section id="contact">
-    <ul class="cont">
-      <li><img src="maillogo.png"/>:bhavana.b.6713@gmail.com</li>
-      <li><img src="instagramlogo.jpeg"/>:bhavanareddi13</li>
-      <li><img src="facebooklogo.png"/>:bhavanareddi</li>
-    </ul>
-  </section>
-  <footer>
-    <p>&copy;2023</p>
-  </footer>
-</body>
-</html>
+body{
+    min-height: 900px;
+    width: 99%;
+    overflow-x: hidden;
+    /* border: 1px solid black; */
+}
+header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 55px;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 1px solid black; */
+    background-color: rgb(255, 255, 255);
+}
+h2{
+    color: rgb(0, 0, 0);
+    font-style: italic;
+}
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bolder;
+}
+.home{
+    background-image: url(home.jpg);
+    height: 100vh;
+    width:100%;
+    position: relative;
+}
+.home p{
+    font-size: 35px;
+}
+.text{
+    height: 100px;
+    width: 500px;
+    /* border: 1px solid rgb(255, 255, 255); */
+    position: absolute;
+    top: 30vh;
+    left: 140vh;
+}
+.text p{
+    color: red;
+    font-size: 5vh;
+}
+.left table{
+    font-size: 22px;
+    font-family:'Times New Roman', Times, serif;
+}
+section{
+    display: flex;
+    justify-content: space-around;
+}
+section div img{
+    margin-bottom:100px;
+    margin-top:100px;
+}
+section div{
+    padding:30px;
+}
+.zero{
+    margin-top: 90px;
+  width:30%;
+}
+.one{
+    width:30%;
+}
+.two{
+    width:30%;
+}
+.three{
+    width:30%;
+}
+.left{
+    width:70%;
+    margin-top: 50px;
+    font-size:20px;
+}
+.right{
+    width:20%;
+}
+.contact{
+    font-size:20px;
+}
+.b{
+    display: inline-block;
+    position: absolute;
+}
